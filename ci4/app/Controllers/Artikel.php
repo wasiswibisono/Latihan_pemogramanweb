@@ -1,8 +1,8 @@
 <?php
-
 namespace App\Controllers;
 
 use App\Models\ArtikelModel;
+use CodeIgniter\Exceptions\PageNotFoundException; // Make sure to import this
 
 class Artikel extends BaseController
 {
@@ -11,15 +11,16 @@ class Artikel extends BaseController
         $title = 'Daftar Artikel';
         $model = new ArtikelModel();
         $artikel = $model->findAll();
-
         return view('artikel/index', compact('artikel', 'title'));
     }
 
     public function view($slug)
     {
         $model = new ArtikelModel();
-        $artikel = $model->where(['slug' => $slug])->first();
-
+        $artikel = $model->where([
+            'slug' => $slug
+        ])->first();
+        
         // Menampilkan error apabila data tidak ada.
         if (!$artikel) {
             throw PageNotFoundException::forPageNotFound();
@@ -34,13 +35,12 @@ class Artikel extends BaseController
         $title = 'Daftar Artikel';
         $model = new ArtikelModel();
         $artikel = $model->findAll();
-
         return view('artikel/admin_index', compact('artikel', 'title'));
     }
 
     public function add()
     {
-        // Validasi data.
+        // validasi data.
         $validation = \Config\Services::validation();
         $validation->setRules(['judul' => 'required']);
         $isDataValid = $validation->withRequest($this->request)->run();
@@ -62,8 +62,7 @@ class Artikel extends BaseController
     public function edit($id)
     {
         $artikel = new ArtikelModel();
-
-        // Validasi data.
+        // validasi data.
         $validation = \Config\Services::validation();
         $validation->setRules(['judul' => 'required']);
         $isDataValid = $validation->withRequest($this->request)->run();
@@ -76,10 +75,9 @@ class Artikel extends BaseController
             return redirect('admin/artikel');
         }
 
-        // Ambil data lama.
+        // ambil data lama
         $data = $artikel->where('id', $id)->first();
         $title = "Edit Artikel";
-
         return view('artikel/form_edit', compact('title', 'data'));
     }
 
@@ -87,9 +85,6 @@ class Artikel extends BaseController
     {
         $artikel = new ArtikelModel();
         $artikel->delete($id);
-        $db = \Config\Database::connect();
-        $db->query("ALTER TABLE artikel AUTO_INCREMENT = 1");
-        
         return redirect('admin/artikel');
     }
 }

@@ -27,7 +27,7 @@
             <?php endforeach; ?>
         <?php else: ?>
             <tr>
-                <td colspan="4">Belum ada data.</td>
+                <td colspan="4">Belum Ada Data</td>
             </tr>
         <?php endif; ?>
     </tbody>
