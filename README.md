@@ -1,4 +1,4 @@
-# Tugas Praktikum 1-3
+![Screenshot (48)](https://github.com/user-attachments/assets/31992eca-7016-4cdd-b902-34b62c55030b)# Tugas Praktikum 1-3
 
 |Nama|NIM|Kelas|Mata Kuliah|
 |----|---|-----|------|
@@ -135,7 +135,7 @@ public function about()
 <?= $this->include('template/footer'); ?>
 ```
 ### Selanjutnya refresh tampilan pada alamat http://localhost:8080/about
-![gambar](ss_gambar_pemrograman_web2/ss6_tugas_pemrograman_web2.png)
+![gambar](ss_pemograman/ss6_pemograman.png)
 
 # Praktikum 2: Framework Lanjutan (CRUD)
 ## Tujuan
@@ -216,7 +216,7 @@ INSERT INTO artikel (judul, isi, slug) VALUE
 ('Artikel kedua', 'Tidak seperti anggapan banyak orang, Lorem Ipsum bukanlah teks-teks yang diacak. Ia berakar dari sebuah naskah sastra latin klasik dari era 45 sebelum masehi, hingga bisa dipastikan usianya telah mencapai lebih dari 2000 tahun.', 'artikel-kedua');
 ```
 ### Refresh kembali browser, sehingga akan ditampilkan hasilnya.
-![gambar](ss_gambar_pemrograman_web2/ss7_tugas_pemrograman_web2.png)
+![gambar](ss_pemograman/ss7_pemograman.png)
 
 ## Membuat Tampilan Detail Artikel
 Tampilan pada saat judul berita di klik maka akan diarahkan ke halaman yang berbeda. Tambahkan fungsi baru pada Controller Artikel dengan nama view().
@@ -257,7 +257,7 @@ Buka Kembali file app/config/Routes.php, kemudian tambahkan routing untuk artike
 ```php
 $routes->get('/artikel/(:any)', 'Artikel::view/$1');
 ```
-![gambar](ss_gambar_pemrograman_web2/ss8_tugas_pemrograman_web2.png)
+![gambar](ss_pemograman/ss8_pemograman.png)
 
 ## Membuat Menu Admin
 Menu admin adalah untuk proses CRUD data artikel. Buat method baru pada Controller artikel dengan nama admin_index().
@@ -327,7 +327,7 @@ $routes->get('artikel/delete/(:any)', 'Artikel::delete/$1');
 });
 ```
 ### Akses menu admin dengan url http://localhost:8080/admin/artikel
-![gambar](ss_gambar_pemrograman_web2/ss9_tugas_pemrograman_web2.png)
+![gambar](ss_pemograman/ss9_pemograman.png)
 
 ## Menambah Data Artikel
 Tambahkan fungsi/method baru pada Controller Artikel dengan nama add().
@@ -374,7 +374,7 @@ Kemudian buat view untuk form tambah dengan nama form_add.php
 
 <?= $this->include('template/admin_footer'); ?>
 ```
-![gambar](ss_gambar_pemrograman_web2/ss10_tugas_pemrograman_web2.png)
+![gambar](ss_pemograman/ss10_pemograman.png)
 
 ## Mengubah Data
 Tambahkan fungsi/method baru pada Controller Artikel dengan nama edit().
@@ -423,7 +423,7 @@ Kemudian buat view untuk form tambah dengan nama form_edit.php
 
 <?= $this->include('template/admin_footer'); ?>
 ```
-![gambar](ss_gambar_pemrograman_web2/ss11_tugas_pemrograman_web2.png)
+![gambar](ss_pemograman/ss11_pemograman.png)
 
 # Praktikum 3: View Layout dan View Cell
 ## Tujuan
