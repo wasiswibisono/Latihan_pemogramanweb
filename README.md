@@ -20,15 +20,15 @@ Untuk melakukan instalasi Codeigniter 4 dapat dilakukan dengan dua cara, yaitu c
 2. Extrak file zip Codeigniter ke direktori htdocs/Lab11_php_ci.
 3. Ubah nama direktory framework-4.x.xx menjadi ci4.
 4. Buka browser dengan alamat http://localhost/Lab11_php_ci/ci4/public/
-![gambar](ss_gambar_pemrograman_web2/ss1_tugas_pemrograman_web2.png)
+![gambar](ss_pemograman/ss1_pemograman.png)
 
 ## Menjalankan CLI (Command Line Interface)
 ### Codeigniter 4 menyediakan CLI untuk mempermudah proses development. Untuk mengakses CLI buka terminal/command prompt.
-![gambar](ss_gambar_pemrograman_web2/ss2_tugas_pemrograman_web2.png)
+![gambar](ss_pemograman/ss2_pemograman.png)
 
-![gambar](ss_gambar_pemrograman_web2/ss3_tugas_pemrograman_web2.png)
+![gambar](ss_pemograman/ss3_pemograman.png)
 ### Contoh error yang terjadi. Untuk mencoba error tersebut, ubah kode pada file app/Controller/Home.php hilangkan titik koma pada akhir kode.
-![gambar](ss_gambar_pemrograman_web2/ss4_tugas_pemrograman_web2.png)
+![gambar](ss_pemograman/ss4_pemograman.png)
 
 ## Auto Routing
 ### Tambahkan method baru pada Controller Page seperti berikut.
@@ -39,7 +39,7 @@ echo "ini halaman Term of Services";
 }
 ```
 ### Method ini belum ada pada routing, sehingga cara mengaksesnya dengan menggunakan alamat: http://localhost:8080/page/tos
-![gambar](ss_gambar_pemrograman_web2/ss5_tugas_pemrograman_web2.png)
+![gambar](ss_pemograman/ss5_pemograman.png)
 
 ## Membuat View
 ### Selanjutnya adalam membuat view untuk tampilan web agar lebih menarik. Buat file baru dengan nama about.php pada direktori view (app/view/about.php) kemudian isi kodenya seperti berikut.
