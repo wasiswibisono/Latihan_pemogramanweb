@@ -327,7 +327,7 @@ $routes->get('artikel/delete/(:any)', 'Artikel::delete/$1');
 });
 ```
 ### Akses menu admin dengan url http://localhost:8080/admin/artikel
-![gambar](ss_pemograman/ss9_pemograman.png)
+![gambar](ss_pemograman/ss12_pemograman.png)
 
 ## Menambah Data Artikel
 Tambahkan fungsi/method baru pada Controller Artikel dengan nama add().
@@ -374,7 +374,7 @@ Kemudian buat view untuk form tambah dengan nama form_add.php
 
 <?= $this->include('template/admin_footer'); ?>
 ```
-![gambar](ss_pemograman/ss10_pemograman.png)
+![gambar](ss_pemograman/ss9_pemograman.png)
 
 ## Mengubah Data
 Tambahkan fungsi/method baru pada Controller Artikel dengan nama edit().
