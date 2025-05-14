@@ -423,7 +423,7 @@ Kemudian buat view untuk form tambah dengan nama form_edit.php
 
 <?= $this->include('template/admin_footer'); ?>
 ```
-![gambar](ss_pemograman/ss11_pemograman.png)
+![gambar](ss_pemograman/ss11.pemograman.png)
 
 # Praktikum 3: View Layout dan View Cell
 ## Tujuan
