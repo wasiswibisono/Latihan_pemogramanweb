@@ -1,4 +1,4 @@
-![Screenshot (48)](https://github.com/user-attachments/assets/31992eca-7016-4cdd-b902-34b62c55030b)# Tugas Praktikum 1-3
+# Tugas Praktikum 1-3
 
 |Nama|NIM|Kelas|Mata Kuliah|
 |----|---|-----|------|
